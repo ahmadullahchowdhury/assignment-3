@@ -1,46 +1,100 @@
 @media only screen and (max-width: 576px) {
-    .phone{
+    .phone {
         display: flex !important;
         flex-direction: column !important;
     }
 
-    .image{
+    .image {
         width: 100%;
     }
 
-    .desktop-only{
+    .desktop-only {
         display: none;
     }
 
-    .header-title{
+    .header-title {
         font-size: 18px;
+        padding-top: 15vh;
+
     }
-    .header-paragraph{
+    .header-title-2 {
+        font-size: 18px;
+
+    }
+
+    .header-paragraph {
         font-size: 10px;
     }
-    
 
-  }
-
-  @media only screen and (min-width: 577px) and (max-width:993px ) {
-
-
-    .desktop-only{
-        display: none;
+    .btn-lg{
+        visibility: hidden;
+    }
+    .btn-md{
+        visibility: hidden;
     }
 
-  }
-  .carousel-caption{
-    top:0;
-  }
-.overlay-img{
-    filter: brightness(60%);
+
+}
+
+@media only screen and (min-width: 577px) and (max-width:993px) {
+    .header-title { 
+        padding-top: 15vh;
+    }
+    .desktop-only {
+        display: none;
+    }
+    .btn-lg{
+        visibility: hidden;
+    }
+    .btn-sm{
+        visibility: hidden;
+    }
+    .btn-md{
+        margin-top: -2vh;
+    }
+    .desktop{
+        text-align: center;
+    }
+
+}
+
+.carousel-caption {
+    top: 0;
+}
+
+.overlay-img {
+    filter: brightness(45%);
 }
 
 @media only screen and (min-width: 994px) {
-    .accordion{
+    .accordion {
         padding-left: 200px;
         padding-right: 200px;
     }
 
+    .header-title {
+        font-size: 8vh;
+    }
+
+    .header-title-2 {
+        font-size: 8vh;
+        padding-bottom: 20px;
+    }
+
+    .btn-md {
+        visibility: hidden;
+        /* display: none; */
+    }
+
+    .btn-sm {
+        visibility: hidden;
+        /* display: none; */
+
+
+    }
+    .btn-lg{
+        margin-top: -7vh;
+    }
+
 }
+
