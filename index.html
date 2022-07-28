@@ -23,7 +23,7 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end pe-5 me-5" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 
                     <ul class="navbar-nav">
 
@@ -56,8 +56,8 @@
 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/cover/cover-1.png" class="img-fluid w-100" alt="...">
-                        <div class="carousel-caption d-flex flex-column justify-content-center  ">
+                        <img src="images/cover/cover-1.png" class="img-fluid w-100 overlay-img" alt="...">
+                        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center ">
                             <h1 class="header-title" >The perfect venue for your
                                 next event</h1>
                             <p class="header-paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
@@ -66,8 +66,8 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/cover/cover-2.jpg" class="img-fluid w-100 " alt="...">
-                        <div class="carousel-caption  d-flex flex-column justify-content-center  ">
+                        <img src="images/cover/cover-2.jpg" class="img-fluid w-100 overlay-img " alt="...">
+                        <div class="carousel-caption  d-flex flex-column justify-content-center align-items-center  ">
                             <h1 class="header-title" >The perfect venue for your
                                 next event</h1>
                             <p class="header-paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
@@ -76,8 +76,8 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/cover/cover-3.jpg" class=" img-fluid w-100" alt="...">
-                        <div class="carousel-caption  d-flex flex-column justify-content-center ">
+                        <img src="images/cover/cover-3.jpg" class=" img-fluid w-100 overlay-img" alt="...">
+                        <div class="carousel-caption  d-flex flex-column justify-content-center  align-items-center">
                             <h1 class="header-title" >The perfect venue for your
                                 next event</h1>
                             <p class="header-paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
@@ -235,9 +235,48 @@
     </section>
 
     <section>
-        <div class="container d-flex justify-content-center">
+        <div class="container ">
+            <div class="row bg-primary m-2 border rounded-3 ">
+                    <div class="col-lg-8 col-md-12 col-sm-12 p-4 ">
+                        <div class=" d-flex justify-content-center align-items-center flex-column">
+                            <h1 class="text-white pb-3 text-bold fs-1 ">Ready to join?</h1>
+                        <p class="text-white text-center">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                        </p>
+
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center align-items-center pb-4">
+                            <button type="button" class="btn btn-light text-primary px-4  py-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Register Now</button>
+                    </div>
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="staticBackdropLabel">Do You Want to Register Now?</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                If you click yes then it redirect you to a new
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                              <button type="button" class="btn btn-primary">YES</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <section>
+        <div class="container d-flex justify-content-center ">
             <div class="m-3">
-                <h2 class="text-center fw-bold">Discover Our Popular Courses</h2>
+                <h2 class="text-center fw-bold p-4">Discover Our Popular Courses</h2>
                 <p class="text-center">
                     It is a long established fact that a reader will be distracted by the readable content of a page
                     when looking at its layout.
@@ -284,15 +323,13 @@
                   </div>
                 </div>
               </div>
-            
-
         </div>
     </section>
 
     <section class="desktop-only">
         <div class="container d-flex justify-content-center">
             <div class="m-3">
-                <h2 class="text-center fw-bold">Discover Our Popular Courses</h2>
+                <h2 class="text-center fw-bold p-4">Discover Our Popular Courses</h2>
                 <div class=" m-3 d-flex align-items-center" >
                     <img class="mx-4" src="/images/company/company-1.png" alt="">
                     <img class="mx-4" src="/images/company/company-2.png" alt="">
@@ -306,130 +343,7 @@
         </div>
     </section>
 
-    <!-- <section>
-        <div class="container mt-5 pt-5 mb-5 pb-5  ">
-
-            <div class="row">
-                <div class="col-md-6 col-sm-12 d-flex justify-content-end">
-                    <img class=" w-100 img-fluid" src="convention-center-main/images/wedding.png" alt="">
-                </div>
-                <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-start">
-                    <h1>Every moment is Precious </h1>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <button type="button" class="btn btn-primary">Explore Album</button>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="container mt-5 pt-5 mb-5 pb-5">
-            <div class="row">
-                <div
-                    class="col-md-3 col-sm-6 col-12 d-flex flex-column justify-content-center  cards cards-1  ctoast p-3 ">
-                    <div class="ctoast-1">
-                        <span>Hot</span>
-                    </div>
-                    <h1>$300</h1>
-                    <h2>Business fair</h2>
-                    <p>For most businesses event like book fair, craft fair.</p>
-                    <ul>
-                        <li>
-                            limited space access
-                        </li>
-                        <li>
-                            Secuirty facility
-                        </li>
-                        <li>
-                            event support
-                        </li>
-                        <li>
-                            Decoration design
-                        </li>
-
-                        <li>
-                            Per day bill
-                        </li>
-                    </ul>
-                    <button type="button" class="btn btn-light text-primary rounded-1 rounded-pill">Choose Plan</button>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12 d-flex flex-column justify-content-center  cards  ">
-                    <h1>$300</h1>
-                    <h2>Business fair</h2>
-                    <p>For most businesses event like book fair, craft fair.</p>
-                    <ul>
-                        <li>
-                            limited space access
-                        </li>
-                        <li>
-                            Secuirty facility
-                        </li>
-                        <li>
-                            event support
-                        </li>
-                        <li>
-                            Decoration design
-                        </li>
-
-                        <li>
-                            Per day bill
-                        </li>
-                    </ul>
-                    <button type="button" class="btn btn-light text-primary rounded-1 rounded-pill">Choose Plan</button>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12 d-flex flex-column justify-content-center  cards  ">
-                    <h1>$300</h1>
-                    <h2>Business fair</h2>
-                    <p>For most businesses event like book fair, craft fair.</p>
-                    <ul>
-                        <li>
-                            limited space access
-                        </li>
-                        <li>
-                            Secuirty facility
-                        </li>
-                        <li>
-                            event support
-                        </li>
-                        <li>
-                            Decoration design
-                        </li>
-
-                        <li>
-                            Per day bill
-                        </li>
-                    </ul>
-                    <button type="button" class="btn btn-light text-primary rounded-1 rounded-pill">Choose Plan</button>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12 d-flex flex-column  justify-content-center cards   ">
-                    <h1>$300</h1>
-                    <h2>Business fair</h2>
-                    <p>For most businesses event like book fair, craft fair.</p>
-                    <ul>
-                        <li>
-                            limited space access
-                        </li>
-                        <li>
-                            Secuirty facility
-                        </li>
-                        <li>
-                            event support
-                        </li>
-                        <li>
-                            Decoration design
-                        </li>
-
-                        <li>
-                            Per day bill
-                        </li>
-                    </ul>
-                    <button type="button" class="btn btn-light text-primary rounded-1 rounded-pill">Choose Plan</button>
-                </div>
-
-            </div>
-        </div>
-    </section> -->
-
+    
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
