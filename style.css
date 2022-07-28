@@ -1,16 +1,31 @@
 .slider{
     padding-top: 5vh;
 }
+
+.carousel-caption {
+    top: 0;
+}
+
+.overlay-img {
+    filter: brightness(45%);
+}
+
+
+/* media queries used only to control some custom requirements */
+
+/* small device */
 @media only screen and (max-width: 576px) {
+
+    /* to divide course row into column for phone */
     .phone {
         display: flex !important;
-        flex-direction: column !important;
+        flex-direction: column !important;    
     }
 
     .image {
         width: 100%;
     }
-
+/* company section hides for phone */
     .desktop-only {
         display: none;
     }
@@ -28,7 +43,7 @@
     .header-paragraph {
         font-size: 10px;
     }
-
+    /* slider button controlling */
     .btn-lg{
         visibility: hidden;
     }
@@ -42,13 +57,18 @@
 
 }
 
+
+/* tablet device */
 @media only screen and (min-width: 577px) and (max-width:993px) {
     .header-title { 
         padding-top: 15vh;
     }
+    /* company section hides for tablet */
     .desktop-only {
         display: none;
     }
+
+    /* slider button controlling */
     .btn-lg{
         visibility: hidden;
     }
@@ -62,15 +82,12 @@
 
 }
 
-.carousel-caption {
-    top: 0;
-}
 
-.overlay-img {
-    filter: brightness(45%);
-}
 
+
+/* large device */
 @media only screen and (min-width: 994px) {
+    /* accrodion shriking */
     .accordion {
         padding-left: 200px;
         padding-right: 200px;
@@ -84,7 +101,8 @@
         font-size: 8vh;
         padding-bottom: 20px;
     }
-
+    
+    /* slider button controlling */
     .btn-md {
         visibility: hidden;
         /* display: none; */
