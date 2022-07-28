@@ -1,3 +1,6 @@
+.slider{
+    padding-top: 5vh;
+}
 @media only screen and (max-width: 576px) {
     .phone {
         display: flex !important;
@@ -32,6 +35,9 @@
     .btn-md{
         visibility: hidden;
     }
+    .overlay-img {
+        height: 35vh !important;
+    }
 
 
 }
@@ -52,9 +58,7 @@
     .btn-md{
         margin-top: -2vh;
     }
-    .desktop{
-        text-align: center;
-    }
+    
 
 }
 
@@ -94,6 +98,9 @@
     }
     .btn-lg{
         margin-top: -7vh;
+    }
+    .desktop{
+        margin-left: -55vh;
     }
 
 }
